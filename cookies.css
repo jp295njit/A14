@@ -1,0 +1,26 @@
+*{
+    alignment: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 95%;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border-width: 3px;
+    border-color:black;
+    border-style: solid;
+    background-color:#fffded;
+}
+
+h1{
+    color: dodgerblue;
+    font-family: "Mongolian Baiti";
+    font-size: 200%;
+
+}
+img{
+    height:200px;
+    width: auto;
+    padding: 2em 5em;
+}

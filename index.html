@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The best page ever</title>
+    <link rel="stylesheet" href="cookies.css">
+
+</head>
+
+<body>
+<script type = "text/javascript">
+    function WriteCookie() {
+        if( document.myform.customer.value == "" ) {
+            alert("Enter some value!");
+            return;
+        }
+        cookievalue = escape(document.myform.customer.value) + ";";
+        document.cookie = "name=" + document.myform.customer.value;
+        document.myform.action = "C:/Users/jhanvi/Documents/FR1/IS117/A14/index.html?customer=" + document.myform.customer.value;
+        document.myform.method= "GET";
+        document.myform.submit();
+
+    }
+</script>
+    <div>
+        <h1>Welcome to this page!</h1>
+        <img src="https://c.tenor.com/RH9jOdC3R80AAAAd/cat-bop.gif" alt="Frustrated Cat Gif">
+        <form name = "myform" action = "">
+            Enter name: <input type = "text" name = "customer"/><br>
+            <input type = "button" value = "Submit" onclick = "WriteCookie();"/>
+        </form>
+    </div>
+</body>
+<footer>
+    <p>&copy Jhanvi Pai November 21<sup>st</sup>, 2021</p>
+</footer>
+</html>
